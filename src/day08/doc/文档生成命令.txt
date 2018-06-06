@@ -1,0 +1,1 @@
+javadoc -d doc -author -version -encoding UTF-8 -charset UTF-8 -windowtitle "Java�ĵ�" -link http://docs.Oracle.com/javase/8/docs/api ArrayTool.java
