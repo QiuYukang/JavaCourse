@@ -66,10 +66,9 @@ public class CodeBlockDemo {
         }
         System.out.println(y);
 
-        System.out.println("------construction code block------");
+        System.out.println("-------construction code block-------");
         Code c1 = new Code();
         Code c2 = new Code(33);
 
-        System.out.println(c1);
     }
 }
