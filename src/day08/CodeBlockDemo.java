@@ -70,6 +70,6 @@ public class CodeBlockDemo {
         Code c1 = new Code();
         Code c2 = new Code(33);
 
-
+        System.out.println(c1);
     }
 }
