@@ -1,4 +1,4 @@
-//package day09;
+package day09;
 
 public class AbstractTest {
     public static void main(String[] args){

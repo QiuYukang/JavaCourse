@@ -1,4 +1,4 @@
-//package day09;
+package day09;
 
 /*
 final关键字：

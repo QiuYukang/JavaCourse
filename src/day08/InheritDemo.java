@@ -13,9 +13,9 @@ package day08;
 public class InheritDemo {
     public static void main(String[] args){
         //error!构造方法不可继承
-        //Teacher t = new Teacher("John", 40);
-        Teacher t = new Teacher();
-        t.setName("Teacher");
+        //Teacher2 t = new Teacher2("John", 40);
+        Teacher2 t = new Teacher2();
+        t.setName("Teacher2");
 
         //多重继承
         RobotTeacher rb = new RobotTeacher();
@@ -44,7 +44,7 @@ class Person{
 
 }
 
-class Teacher extends Person{
+class Teacher extends Person2 {
     int age = 20;
 
     public void tShow(){
@@ -52,7 +52,7 @@ class Teacher extends Person{
     }
 
     //自类不能继承父类私有成员变量
-    //Error java: name 在 day08.Person 中是 private 访问控制
+    //Error java: name 在 day08.Person2 中是 private 访问控制
     /*
     public void showName(){
         System.out.println("name: "+name);
@@ -61,6 +61,6 @@ class Teacher extends Person{
 
 }
 
-class RobotTeacher extends Teacher{
+class RobotTeacher extends Teacher {
 
 }

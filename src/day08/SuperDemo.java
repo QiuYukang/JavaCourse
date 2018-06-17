@@ -29,33 +29,33 @@ class Father{
     public int age = 30;
 
     Father(){
-        System.out.println("Father class's nonparametric construction method");
+        System.out.println("Father2 class's nonparametric construction method");
     }
 
     Father(String name){
-        System.out.println("Father class's parametric construction method");
+        System.out.println("Father2 class's parametric construction method");
     }
 }
 
-class Son extends Father{
+class Son extends Father {
     public int age = 10;
 
     Son(){
         //super();  //系统默认执行父类无参构造
-        System.out.println("Son class's nonparametric construction method");
+        System.out.println("Son2 class's nonparametric construction method");
     }
 
     Son(String name){
         //super();  //系统默认执行父类无参构造
         //super("ssss");  //如果父类没有无参构造，则手动使用super()访问父类带参构造，否则报错！
-        System.out.println("Son class's parametric construction method");
+        System.out.println("Son2 class's parametric construction method");
     }
 
     public void showAge(){
         int age = 5;
         System.out.println("age: "+age);
-        System.out.println("this age(Son.age):"+this.age);
-        System.out.println("super age(Father.age): "+super.age);
+        System.out.println("this age(Son2.age):"+this.age);
+        System.out.println("super age(Father2.age): "+super.age);
     }
 
 }

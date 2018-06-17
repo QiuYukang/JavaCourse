@@ -1,33 +1,33 @@
-//package day08;
+package day08;
 
 public class InheritTest2 {
     public static void main(String[] args){
         //方式1
-        Teacher t = new Teacher();
+        Teacher2 t = new Teacher2();
         t.setAge(27);
         t.setName("郑东奇");
-        System.out.println("Teacher's name:"+t.getName()+"  age:"+t.getAge());
+        System.out.println("Teacher2's name:"+t.getName()+"  age:"+t.getAge());
         t.teach("邱玉康");
 
         System.out.println("-------------------------------------");
 
         //方式2
-        Student s = new Student("邱玉康", 20);
-        System.out.println("Student's name:"+s.getName()+"  age:"+s.getAge());
+        Student2 s = new Student2("邱玉康", 20);
+        System.out.println("Student2's name:"+s.getName()+"  age:"+s.getAge());
         s.learn("Java");
     }
 }
 
-class Person{
+class Person2 {
     //成员变量
     private String name;
     private int age;
 
     //无参构造
-    Person(){ }
+    Person2(){ }
 
     //带参构造
-    Person(String name, int age){
+    Person2(String name, int age){
         this.name = name;
         this.age = age;
     }
@@ -50,10 +50,10 @@ class Person{
     }
 }
 
-class Teacher extends Person{
-    public Teacher(){}
+class Teacher2 extends Person2 {
+    public Teacher2(){}
 
-    public Teacher(String name, int age){
+    public Teacher2(String name, int age){
         super(name, age);
     }
 
@@ -63,13 +63,13 @@ class Teacher extends Person{
     }
 }
 
-class Student extends Person{
-    public Student(){}
+class Student2 extends Person2 {
+    public Student2(){}
 
-    public Student(String name, int age){
+    public Student2(String name, int age){
         //使用父类的空间来间接访问私有变量
         super(name, age);
-        //错误使用--Error:(58, 13) java: name 在 Person 中是 private 访问控制
+        //错误使用--Error:(58, 13) java: name 在 Person2 中是 private 访问控制
         //this.name = name;
         //this.age = age;
     }

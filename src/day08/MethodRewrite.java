@@ -1,4 +1,4 @@
-//package day08;
+package day08;
 
 /*
     方法重写：子类中出现和父类声明一模一样的方法（方法名、参数、返回值都一样）
@@ -11,17 +11,17 @@
 
 public class MethodRewrite {
     public static void main(String[] args){
-        Son s = new Son();
+        Son2 s = new Son2();
         s.show();
         s.call("Mama");
     }
 }
 
-class Father{
-    Father(){}
+class Father2 {
+    Father2(){}
 
     public void show(){
-        System.out.println("Father.");
+        System.out.println("Father2.");
     }
 
     public void call(String name){
@@ -29,17 +29,17 @@ class Father{
     }
 }
 
-class Son extends Father{
-    Son(){}
+class Son2 extends Father2 {
+    Son2(){}
 
     //重写
     public void show(){
-        System.out.println("Son.");
+        System.out.println("Son2.");
     }
 
     //重载
     public void show(int a){
-        System.out.println("Son."+a);
+        System.out.println("Son2."+a);
     }
 
     //扩展功能
