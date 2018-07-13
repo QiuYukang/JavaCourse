@@ -9,7 +9,7 @@ package day10;
  */
 
 public class ParameterTest {
-    public static void main(String args[]){
+    public static void main(String[] args){
         ParameterDemo PT = new ParameterDemo();
         //匿名类作为实际参数
         PT.method(new Parameter());

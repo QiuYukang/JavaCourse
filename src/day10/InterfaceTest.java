@@ -5,7 +5,7 @@ package day10;
  */
 
 public class InterfaceTest {
-    public static void main(String args[]){
+    public static void main(String[] args){
         PingPangAthlete ppp = new PingPangAthlete("Bob", 27);
 
         System.out.println(ppp.getName() + ":" + ppp.getAge());

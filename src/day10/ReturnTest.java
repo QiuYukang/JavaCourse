@@ -11,7 +11,7 @@ package day10;
  */
 
 public class ReturnTest {
-    public static void main(String args[]){
+    public static void main(String[] args){
         System.out.println("链式编程");
 
         //测试一个链式编程
